@@ -22,12 +22,12 @@ int main() {
         for (int j = 0; j < n; j++)
             scanf("%f", &a[i][j]);
 
-    // Initialize the inverse matrix as identity
+    
     for (int i = 0; i < n; i++)
         for (int j = 0; j < n; j++)
             inverse[i][j] = (i == j) ? 1.0 : 0.0;
 
-    // Applying Gauss-Jordan elimination
+  
     for (int i = 0; i < n; i++) {
         float diag = a[i][i];
         if (diag == 0.0) {
